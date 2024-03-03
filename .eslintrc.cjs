@@ -18,7 +18,12 @@ module.exports = {
     project: ['./tsconfig.json', './tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
-  plugins: ['react', 'react-refresh', 'prettier'],
+  plugins: [
+    'react',
+    'react-refresh',
+    'prettier',
+    'prettier-plugin-tailwindcss',
+  ],
   rules: {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx'] }],
